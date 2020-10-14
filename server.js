@@ -3,7 +3,7 @@ const easyDB = require('easydb-io')
 
 const server = express()
 
-const docs = express.static("docs")
+const docs = express.static(__dirname + "/docs")
 const urlencoded = express.urlencoded({extended: true}) // convierte de FormData a Object
 const json = express.json() // Convierte de JSON a Object
 
